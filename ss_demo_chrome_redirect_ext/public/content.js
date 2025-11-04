@@ -26,8 +26,7 @@
       transition: "all 0.2s ease",
     });
 
-    // If we're on YouTube, make the button visually 'white' and hide it from
-    // assistive technologies so screen readers won't read it.
+    
     const isYouTube = /(^|\.)youtube\.com$/.test(window.location.hostname);
     if (isYouTube) {
       btn.style.backgroundColor = "#ffffff";
@@ -49,7 +48,7 @@
       try {
         chrome.runtime.sendMessage({ action: "open_popup" });
       } catch (e) {
-        // fallback for non-extension contexts
+        
         console.log("StratSync: clicked (no runtime)");
       }
     });

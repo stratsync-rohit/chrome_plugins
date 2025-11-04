@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "StratSync Demo Plugin",
-  "version": "2.0.0",
-  "description": "An AI chatbot by StratSync powered by RAG for accurate, context-aware responses.",
+  "name": "StratSync - AI Co-Pilot (redirect)",
+  "version": "1.0.1",
+  "description": "Your AI co-pilot for customer success and business growth.",
 
   "action": {
     "default_popup": "dist/index.html"
@@ -12,12 +12,14 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/*"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
   ],
 
   "icons": {
-    "48": "dist/logo.jpeg"
+    "16": "public/icons/icon16.png",
+    "48": "public/icons/icon48.png",
+    "128": "public/icons/icon128.png"
   }
 }
