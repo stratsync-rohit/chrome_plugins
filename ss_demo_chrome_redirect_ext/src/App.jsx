@@ -39,33 +39,7 @@ export default function App() {
         fontFamily: "Arial, sans-serif",
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 8,
-          padding: 8,
-          background: "#f6f4f4ff",
-          borderBottom: "1px solid #eee",
-          fontSize: 16,
-          fontWeight: 600,
-          color: "#000",
-        }}
-      >
-        <img
-          src="logo_.png"
-          alt="StratSync Logo"
-          style={{
-            width: 24,
-            height: 22,
-            objectFit: "contain",
-            cursor: "pointer",
-            
-          }}
-        />
-        StratSync ChatBot
-      </div>
+     
 
       <div style={{ flex: 1, position: "relative" }}>
         {loading && !failed && (
