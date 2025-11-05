@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "StratSync - AI Co-Pilot (Redirect)",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Your AI co-pilot for customer success and business growth.",
   "action": {
     "default_popup": "dist/index.html"
